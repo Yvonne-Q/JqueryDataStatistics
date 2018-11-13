@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery立体式数字动态翻页效果</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+</head>
+<body>
+
+<!-- 代码部分begin -->
+<div class="tj_top"></div>
+<div class="tj_tit"></div>
+<div class="dataStatistics">
+    <div class="digit_set"></div>
+    <div class="digit_set"></div>
+    <div class="digit_set set_last"></div>
+</div>
+<div class="tj_foot"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.dataStatistics.js"></script>
+<script>
+    const b = $('.dataStatistics').dataStatistics({min: 0, max: 0, len: 3});
+    b(200,0) //第一个参数目标值，第二个参数原始值
+
+</script>
+<!-- 代码部分end -->
+
+</body>
+</html>
